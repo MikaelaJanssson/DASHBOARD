@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personlig Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header_title">
+        <h1 id="header_title_name">Mikaela DashBoard</h1> 
+        
+    <!--TIME/DATE STARTS -->
+        <section class="clock">
+            <p id="time">00:00:00</p>
+            <p id="date">YYYY-MM-DD</p>
+        </section>
+
+    <!--TIME/DATE ENDS  -->    
+
+    </header>
+<div id="container_dash">
+    
+    <!--RUTA 1 STARTS-->
+    <div class="dashboard">
+        <div class="inner-box">        
+        <header>
+            <h1 contenteditable="true" id="dashboard-title">Snabblänkar</h1>
+        </header>
+        
+        <section class="links">
+            <ul id="link-list"></ul>
+            <input type="text" id="link-name" placeholder="Rubrik på länk">
+            <input type="url" id="link-url" placeholder="URL">
+            <button id="add-link">Lägg till länk</button>
+        </section></div>
+
+    </div>
+<!--RUTA 1 ENDS-->
+
+
+<!--RUTA 2 STARTS-->
+
+    <div class="dashboard">
+        <div class="inner-box">        
+        <header>
+            <h1 contenteditable="true" id="dashboard-title">Dagens väder</h1>
+        </header>
+        
+
+        <section class="weather">
+            <h2>Mölndal</h2>
+            <p id="weatherInfo">Hämtar väder...</p>
+        </section></div>
+
+
+    </div>
+
+    <!--RUTA 2 ENDS-->
+    
+    <!-- RUTA 3 - JOKE STARTS -->
+<div class="dashboard">
+    <div class="inner-box">
+      <header>
+        <h1 contenteditable="true" id="dashboard-title">Dagens skämt</h1>
+      </header>
+  
+      <section class="extra">
+        <div id="joke-container">
+            <h3>Skämt för idag:</h3>
+            <p id="joke-text">Laddar skämt...</p>
+          </div>
+        
+      </section>
+    </div>
+  </div>
+  <!-- RUTA 3 - JOKE ENDS -->
+
+
+
+    <!--ANTECKNINGAR STARTS-->
+
+    <div class="dashboard">
+        <div class="inner-box">       
+          <header>
+            <h1 contenteditable="true" id="dashboard-title">Anteckningar</h1>
+          </header>
+      
+          <!-- Textarea för anteckningar -->
+          <textarea id="notes" placeholder="Skriv dina anteckningar här..."></textarea>
+        </div>
+      </div>
+      
+
+    <!--RUTA 4 ENDS-->
+</div>
+    
+<!-- BUTTON -->
+ <div id="btn">
+    <button id="changeBackgroundBtn">Byt bakgrund
+        
+    </button>
+ </div>
+
+ <script src="config.js"></script>
+ <script src="script.js"></script>
+</body>
+</html
