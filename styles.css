@@ -102,7 +102,7 @@ section {
 
 #link-name,
 #link-url {
-  width: 100%; /* Gör inputfältet flexibelt */
+  width: 100%;
   padding: 10px;
   margin: 5px 0;
   font-size: 16px;
@@ -144,26 +144,24 @@ section {
   height: 30px;
   width: 140px;
 }
-/* Media query för mindre skärmar */
 
 @media (max-width: 1358px) {
   #container_dash {
-    flex-direction: column; /* Sektionerna staplas vertikalt på små skärmar */
+    flex-direction: column;
     align-items: center;
     padding-top: 1100px;
   }
 
   .dashboard {
-    flex-direction: column; /* Ändrar layouten så sektionerna staplas */
+    flex-direction: column;
     width: 100%;
   }
 
   section {
-    width: 100%; /* Gör sektionerna 100% breda på små skärmar */
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  /* Justera klockans storlek på små skärmar */
   .clock {
     height: auto;
     font-size: 1.2rem;
@@ -172,29 +170,27 @@ section {
 
 @media (max-width: 768px) {
   #container_dash {
-    flex-direction: column; /* Sektionerna staplas vertikalt på små skärmar */
+    flex-direction: column;
     align-items: center;
     padding-top: 1100px;
   }
 
   .dashboard {
-    flex-direction: column; /* Ändrar layouten så sektionerna staplas */
+    flex-direction: column;
     width: 100%;
   }
 
   section {
-    width: 100%; /* Gör sektionerna 100% breda på små skärmar */
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  /* Justera klockans storlek på små skärmar */
   .clock {
     height: auto;
     font-size: 1.2rem;
   }
 }
 
-/* Media query för ännu mindre skärmar (t.ex. mobiltelefoner) */
 @media (max-width: 480px) {
   #header_title {
     font-size: 13px;

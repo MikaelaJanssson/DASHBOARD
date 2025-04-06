@@ -38,7 +38,6 @@ window.addEventListener("load", function () {
     headerTitle.innerText = savedTitle;
   }
 
-  // Kör både fetchJoke och getLocation parallellt
   initDashboard();
 });
 
@@ -51,7 +50,7 @@ const linkList = document.getElementById("link-list");
 // Funktion för att hämta favicon
 function fetchFavicon(url) {
   const domain = new URL(url).hostname; // Få domänen från URL
-  const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}`; // Google favicon-tjänst
+  const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}`;
 
   return faviconUrl;
 }
