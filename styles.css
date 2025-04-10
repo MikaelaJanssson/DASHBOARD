@@ -172,7 +172,6 @@ section {
   #container_dash {
     flex-direction: column;
     align-items: center;
-    padding-top: 1100px;
   }
 
   .dashboard {
@@ -192,6 +191,15 @@ section {
 }
 
 @media (max-width: 480px) {
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    gap: 20px;
+  }
+
   #header_title {
     font-size: 13px;
   }
@@ -202,5 +210,38 @@ section {
 
   section {
     width: 50%;
+  }
+
+  #container_dash {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1200px;
+  }
+
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  section.links,
+  section.extra,
+  section.weather {
+    min-width: unset;
+    width: 100% !important;
+  }
+
+  #link-name,
+  #link-url,
+  #add-link {
+    width: 100%;
+    font-size: 14px;
+    padding: 1px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
   }
 }
